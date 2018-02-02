@@ -1,7 +1,6 @@
-# react-guid 1
+# React Guid
 
+Руководстов по разработке на react 
 
+{% include "./SUMMARY.md" %}
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNzI4NjU1OF19
--->
