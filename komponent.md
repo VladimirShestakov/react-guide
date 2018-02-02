@@ -36,26 +36,27 @@
 
 Название класса всегда с большой буквы \(pascal стиль\)
 
-`classMenuTopextend Component {`
+```js
+classMenuTopextend Component {
 
-`  
-}`
+}
 
-`export MenuTop;`
+export MenuTop;
+```
 
 
 
 Описание входных свойств делать в начале класса статическим свойством propTypes вместо его присвоения после определения класса. Статических свойств нет в стандарте ES2016/2017, но через babel поддерживаются.
 
-`class MenuTop extend Component {`
+```
+class MenuTop extend Component {
 
-`static propTypes = {`
+  static propTypes = {
+    items: PropTypes.array
+  }
+}
 
-`items: PropTypes.array`
-
-`}`
-
-`}`
+```
 
 ## Стили класса
 
