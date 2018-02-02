@@ -5,13 +5,14 @@
 
 ---
 
-* [Компонент](component.md#top)
-  * [Класс](component.md#class)
-  * [Стиль](component.md#style)
-  * [События](component.md#callbacks)
-* [Контейнер](containers.md#top)
-  * [Redux connect](containers.md#redux)
-  * [Роутинг](containers.md#routing)
+* [Компонент](component.md#компоненты)
+  * [Класс](component.md#класс-компонента)
+  * [Стиль](component.md#стили)
+  * [События](component.md#события-(callbacks))
+* [Контейнер](containers.md#контейнер)
+  * [Redux connect](containers.md#связывание-с-redux)
+  * [Роутинг](containers.md#роутинг)
+  
 ---
 
 * [Формы](forms.md)

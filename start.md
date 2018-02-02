@@ -1,4 +1,4 @@
-#Начало проекта
+# Начало проекта
 
 1. Склонировать [react-skeleton](https://github.com/ylabio/react-skeleton) в локальный репозиторий
 2. Создать новый пустой проект в [GitLab](http://git.yiilab.com). Проект создавать в группе, обычно 
