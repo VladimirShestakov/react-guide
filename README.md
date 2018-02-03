@@ -1,4 +1,4 @@
-# React Guid
+# React Guide
 
 Руководстов по разработке на react 
 
@@ -9,7 +9,7 @@
 * [Компонент](component.md#компоненты)
   * [Класс](component.md#класс-компонента)
   * [Стиль](component.md#стили)
-  * [События](component.md#события-(callbacks))
+  * [События](component.md#события)
 * [Контейнер](containers.md#контейнер)
   * [Redux connect](containers.md#связывание-с-redux)
   * [Роутинг](containers.md#роутинг)
