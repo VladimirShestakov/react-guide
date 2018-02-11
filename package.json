@@ -1,0 +1,15 @@
+{
+  "name": "React-guid",
+  "version": "1.1.0",
+  "description": "",
+  "scripts": {
+    "start": "gitbook serve",
+    "build": "gitbook build"
+  },
+  "private": false,
+  "author": "Vladimir Shestakov boolive@yandex.ru",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {}
+}

@@ -2,10 +2,6 @@
 
 Руководстов по разработке на react 
 
-* [Разработка](develop.md)
-* [Новый проект](start.md)
-
-
 * [Компонент](component.md#компоненты)
   * [Класс](component.md#класс-компонента)
   * [Стиль](component.md#стили)
@@ -20,3 +16,4 @@
 * [Сессия](session.md)
 * [Redux](redux.md)
 * [Разметка](layouts.md)
+* [Списки](lists.md)

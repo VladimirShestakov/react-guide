@@ -18,12 +18,12 @@
 подсказки. 
 
 ```javascript
-<div className=”FormX”>
-    <div className=”FormX__filed”>
-        <label>Имя</label>
-        <InputText value={data.name} onChnage={this.onChangeField(‘name’)}/>
-        <FieldError errors={errors} path=”name”/>
-      </div>
+<div className="FormX">
+  <div className="FormX__filed">
+    <label>Имя</label>
+    <InputText value={data.name} onChnage={this.onChangeField('name')}/>
+    <FieldError errors={errors} path="name"/>
+    </div>
 </div>
 ```
 

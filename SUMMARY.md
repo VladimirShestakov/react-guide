@@ -20,3 +20,4 @@
 * [Сессия](session.md)
 * [Redux](redux.md)
 * [Разметка](layouts.md)
+* [Списки](lists.md)
