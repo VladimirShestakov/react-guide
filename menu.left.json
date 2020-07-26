@@ -1,0 +1,41 @@
+{
+  "title": "React Skeleton",
+  "key": 1,
+  "url": "/",
+  "children": [
+    {
+      "title": "Установка",
+      "type": "group",
+      "key": 2,
+      "children": [
+        {
+          "title": "Новый проект",
+          "url": "/docs/installation/new-project.md",
+          "key": 3
+        },
+        {
+          "title": "Сборка",
+          "url": "/docs/installation/build.md",
+          "key": 32
+        },
+        {
+          "title": "Настройка",
+          "url": "/docs/installation/settings.md",
+          "key": 31
+        }
+      ]
+    },
+    {
+      "title": "Общие сведения",
+      "type": "group",
+      "key": 4,
+      "children": [
+        {
+          "title": "Структура",
+          "key": 5,
+          "url": "/docs/common/structure.md"
+        }
+      ]
+    }
+  ]
+}
