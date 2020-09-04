@@ -26,13 +26,18 @@
       ]
     },
     {
+      "title": "Чек-лист",
+      "key": 4,
+      "url": "/docs/check-list/index.md"
+    },
+    {
       "title": "Общие сведения",
       "type": "group",
-      "key": 4,
+      "key": 5,
       "children": [
         {
           "title": "Структура",
-          "key": 5,
+          "key": 51,
           "url": "/docs/common/structure.md"
         }
       ]
