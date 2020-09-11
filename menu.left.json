@@ -27,11 +27,49 @@
     },
     {
       "title": "Чек-лист",
+      "type": "group",
       "key": 4,
-      "url": "/docs/check-list/index.md"
+      "children": [
+        {
+          "title": "Репозиторий",
+          "url": "/docs/check/git.md"
+        },
+        {
+          "title": "Вёрстка",
+          "url": "/docs/check/html.md"
+        },
+        {
+          "title": "Компоненты",
+          "url": "/docs/check/component.md"
+        },
+        {
+          "title": "Контейнеры",
+          "url": "/docs/check/container.md"
+        },
+        {
+          "title": "Роутинг",
+          "url": "/docs/check/router.md"
+        },
+        {
+          "title": "Логика приложения",
+          "url": "/docs/check/logic.md"
+        },
+        {
+          "title": "Состояние и экшены",
+          "url": "/docs/check/state.md"
+        },
+        {
+          "title": "Интеграция API",
+          "url": "/docs/check/api.md"
+        },
+        {
+          "title": "Код",
+          "url": "/docs/check/source.md"
+        }
+      ]
     },
     {
-      "title": "Общие сведения",
+      "title": "Разработка",
       "type": "group",
       "key": 5,
       "children": [
