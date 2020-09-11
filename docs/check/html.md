@@ -17,7 +17,7 @@
 8. Для подставления модификатора оформления компонента лучше применить функцию `@utils/themes`
     - Основана на classnames
     - Автоматом всем классам подставляет название блока с модификатором:
-   ```theme('ComponentName', 'skin1 skin2') => "ComponentName_theme_skin1 ComponentName_theme_skin2"```.
+   `theme('ComponentName', 'skin1 skin2')` → `"ComponentName_theme_skin1 ComponentName_theme_skin2"`.
 9. Для разметки областей создавать компоненты Layout* в `@components/layout/`. 
     - Компонентами разметки определяются области, в которые вставляются соответствующие свойства из `props`.
     - Учитывать вариативность компонента разметки, чтобы повторно использовать в разных местах.
