@@ -24,7 +24,7 @@
 10. В компоненте разметка одного блока. Желание заверстать ещё один блок - признак создать отдельный компонент. 
 
 
-```jsx
+```js
 /**
  * Компонент разметки страницы с тремя областями для вставки
  */
@@ -60,7 +60,7 @@ export default React.memo(LayoutPage);
 ```
 
 Пример стилей с темой `night`
-```less   
+```css   
 .LayoutPage{
   display: flex;
   min-height: 100vh;
@@ -86,8 +86,13 @@ export default React.memo(LayoutPage);
 ```
 
 Применение компонента
-```jsx
-<LayoutPage header={<MainHeader/>} footer={<MainFooter/>} theme="night">
-  <About/>
-</LayoutPage>
+```js
+function AboutContainer(){
+  return (
+      <LayoutPage header={<MainHeader/>} footer={<MainFooter/>} theme="night">
+        <About/>
+      </LayoutPage>
+  );
+}
+
 ```
