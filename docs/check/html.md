@@ -13,10 +13,10 @@
 6. Динамическая стилизация компонента через `props` - это передача названия класса *модификатора блока*. 
     - Нежелательно передавать через `props` свойства стиля (цвет, например) - тогда реализация отображения переместиться из компонента в контейнер.
     - По стилям компонента можно узнать все его варианты отображения.
-7. Для комбинации нескольких классов и условий подставления в теге использовать библиотеку [`classnames`](https://www.npmjs.com/package/classnames). 
-8. Для подставления модификатора варианта оформления всего компонента лучше применить функцию `@utils/theme`
+7. Для комбинации нескольких классов и условий их подставления в теге использовать библиотеку [`classnames`](https://www.npmjs.com/package/classnames). 
+8. Для подставления модификатора варианта оформления всего компонента лучше применить функцию `@utils/themes`
    - Основана на classnames
-   - Автоматом всем классам подставляет название блока с модификатором <br/>
+   - Автоматом всем классам подставляет название блока с модификатором:
    ```theme('ComponentName', 'skin1 skin2') => "ComponentName_theme_skin1 ComponentName_theme_skin2"```.
 9. Для разметки областей создавать компоненты Layout* в `@components/layout/`. 
     - Компонентами разметки определяются области, в которые вставляются соответствующие свойства из `props`.
@@ -30,13 +30,13 @@
  */
 import React from 'react';
 import PropTypes from 'prop-types';
-import './style.less';
-import themes from '@utils/themes';
 import cn from 'classnames';
+import theme from '@utils/themes';
+import './style.less';
 
 function LayoutPage (props) {
   return (
-    <div className={cn(`LayoutPage`, themes('LayoutPage', props.theme))}>
+    <div className={cn(`LayoutPage`, theme('LayoutPage', props.theme))}>
       <div className="LayoutPage__header">{props.header}</div>
       <div className="LayoutPage__content">{props.children || props.content}</div>
       <div className="LayoutPage__footer">{props.footer}</div>
