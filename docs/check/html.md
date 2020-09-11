@@ -49,7 +49,7 @@ LayoutPage.propTypes = {
   content: PropTypes.node,
   footer: PropTypes.node,
   children: PropTypes.node,
-  theme: PropTypes.oneOfType([PropTypes.string, PropTypes.array]), // можно передать несколько тем через пробел или массивом
+  theme: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),//можно передать несколько тем через пробел или массивом
 };
 
 LayoutPage.defaultProps = {
