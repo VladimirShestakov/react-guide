@@ -81,7 +81,7 @@
         {
           "title": "Серверный рендер (SSR)",
           "key": 52,
-          "url": "/docs/develop/ssr/problems.md",
+          "url": "/docs/develop/ssr/index.md",
           "children": [
             {
               "title": "Проблемы SSR",
