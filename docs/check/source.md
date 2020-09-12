@@ -7,18 +7,18 @@
 5. Файлы компонент, модулей и потенциально расширяемых на несколько файлов частей кода, группируются в директории.
     - Название директории - это название компонента или модуля.
     - Файлы внутри директории не должны содержать названия компонента или модуля. Их названия - это именования составных частей: `index.js`, `actions.js`, `style.less`, `favicon.png`
-```
-articles
-├──state.js
-├──actions.js 
-└──reducer.js
-...
-button
-├──index.js
-├──style.less 
-└──checked.svg
-```
-6. В одном файле кода содержится логика с однозначным назначением, не должно быть кучи всего в одном месте. 
+    ```
+    articles
+    ├──state.js
+    ├──actions.js 
+    └──reducer.js
+    ...
+    button
+    ├──index.js
+    ├──style.less 
+    └──checked.svg
+    ```
+6. В одном файле кода содержится логика с однозначным назначением, не должно быть кучи всего в одном месте.
 7. Упорядочивать функции в классе (объекте) по приоритету и последовательности исполнения. 
     - Чтобы логика читалась сверху внизу, а не хаотично. 
     - Открыв файл желательно сразу увидеть его главную функцию. 
@@ -65,7 +65,7 @@ function SomeCompoennt(props){
     }
 
     return (
-      <select onClick={callbacks.onClick} className={cn('Select', {'disabled': props.disabled})}>
+      <select onClick={callbacks.onClick} className={themes('Select', {'disabled': props.disabled})}>
           {options.items.map(item => (renders.item(item)))}
       </div>
     )

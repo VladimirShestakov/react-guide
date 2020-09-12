@@ -43,10 +43,10 @@ function Button(props) {
   return (
       <button
         type={props.type}
-        className={cn(`Button`, themes('Button', props.theme))}
+        className={themes('Button', props.theme)}
+        disabled={props.disabled}
         title={props.title}
         onClick={callbacks.onClick}
-        disabled={props.disabled}
       >
         {props.children}
       </button>

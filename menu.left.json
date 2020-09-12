@@ -77,6 +77,23 @@
           "title": "Структура проекта",
           "key": 51,
           "url": "/docs/develop/structure.md"
+        },
+        {
+          "title": "Серверный рендер (SSR)",
+          "key": 52,
+          "url": "/docs/develop/ssr/problems.md",
+          "children": [
+            {
+              "title": "Проблемы SSR",
+              "key": 521,
+              "url": "/docs/develop/ssr/problems.md"
+            },
+            {
+              "title": "Сборка и запуск",
+              "key": 522,
+              "url": "/docs/develop/ssr/build.md"
+            }
+          ]
         }
       ]
     }
