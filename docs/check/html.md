@@ -11,13 +11,16 @@
     - `.modify` - допускаются простые классы для модификации блока или элемента, но их определение должно быть в паре с классом блока или элемента `.CompoenntName.modify{}`;
 5. В описании стилей компонента не использовать каскад с классом от другого компонента.
 6. Динамическая стилизация компонента через `props` - это передача названия класса *модификатора блока*. 
-    - Нежелательно передавать через `props` свойства стиля (цвет, например) - тогда реализация отображения переместиться из компонента в контейнер.
+    - Нежелательно передавать через `props` свойства стиля (цвет, например) - тогда реализация отображения переместится из компонента в контейнер.
     - По стилям компонента можно узнать все его варианты отображения.
-7. Для комбинации нескольких классов и условий их подставления в теге использовать библиотеку [`classnames`](https://www.npmjs.com/package/classnames). 
-8. Для подставления модификатора оформления компонента лучше применить функцию [`@utils/themes`](https://github.com/ylabio/react-skeleton/blob/master/src/utils/themes.js)
+7. Для комбинации нескольких классов в атрибуте `className` использовать библиотеку [`classnames`](https://www.npmjs.com/package/classnames). 
+8. Для подставления модификатора в атрибуте `className` лучше применить функцию [`@utils/themes`](https://github.com/ylabio/react-skeleton/blob/master/src/utils/themes.js)
     - Основана на classnames
-    - Автоматом всем классам подставляет название блока с модификатором:
-   `theme('ComponentName', 'skin1 skin2')` → `"ComponentName_theme_skin1 ComponentName_theme_skin2"`.
+    - Автоматом всем классам подставляет название блока с модификатором `_theme_${modify}`:
+   ```js
+   themes('ComponentName', 'skin1 skin2'); //→ "ComponentName ComponentName_theme_skin1 ComponentName_theme_skin2"
+   themes('ComponentName', {skin3: true, skin4: false}); //→ "ComponentName ComponentName_theme_skin3"
+   ```
 9. Для разметки областей создавать компоненты Layout* в `@components/layout/`. 
     - Компонентами разметки определяются области, в которые вставляются соответствующие свойства из `props`.
     - Учитывать вариативность компонента разметки, чтобы повторно использовать в разных местах.
@@ -31,12 +34,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import theme from '@utils/themes';
+import themes from '@utils/themes';
 import './style.less';
 
 function LayoutPage (props) {
   return (
-    <div className={cn(`LayoutPage`, theme('LayoutPage', props.theme))}>
+    <div className={themes('LayoutPage', props.theme)}>
       <div className="LayoutPage__header">{props.header}</div>
       <div className="LayoutPage__content">{props.children || props.content}</div>
       <div className="LayoutPage__footer">{props.footer}</div>

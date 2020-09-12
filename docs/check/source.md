@@ -38,7 +38,7 @@ button
 import CustomOption from '@components/elements/custom-option';
 /**
  * Пример компонента с логическими блоками
- * @params props {Object} Свойства компонента
+ * @param props {Object} Свойства компонента
  * @return {Object}
  */
 function SomeCompoennt(props){
