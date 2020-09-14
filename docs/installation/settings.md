@@ -66,8 +66,9 @@ pm2 start process.json
 
 ## Алиасы путей
 
-В файле [`package.js`](https://github.com/ylabio/react-skeleton/blob/master/package.json) кроме типовых свойств проекта прописаны алиасы на директории, чтобы импортировать их из любого файла через @ вместо указания относительных путей. Алиасы также поймет IDE WebStorm.
+В файле [`package.json`](https://github.com/ylabio/react-skeleton/blob/master/package.json) кроме типовых свойств проекта прописаны алиасы на директории, чтобы импортировать их из любого файла через @ вместо указания относительных путей. Алиасы также поймет IDE WebStorm.
 
+*`package.json`*
 ```
 "_moduleAliases": {
     "@api": "./src/api/",
@@ -78,6 +79,9 @@ pm2 start process.json
     "@theme": "./src/theme",
     "@utils": "./src/utils/"
 }
+```
 
-import Button from "@components/button"
+*Пример импорта через алиас*
+```js
+import Button from '@components/button'; // вместо '../../components/button'
 ```
