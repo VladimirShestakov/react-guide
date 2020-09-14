@@ -84,9 +84,9 @@
           "url": "/docs/develop/ssr/index.md",
           "children": [
             {
-              "title": "Проблемы SSR",
+              "title": "Требования",
               "key": 521,
-              "url": "/docs/develop/ssr/problems.md"
+              "url": "/docs/develop/ssr/requirements.md"
             },
             {
               "title": "Сборка и запуск",
