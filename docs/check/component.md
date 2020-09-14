@@ -15,9 +15,9 @@
 12. Обязательно описывать все получаемые компонентом свойства и их значения по умолчанию в `propsTypes` и `defaultProps`.
 13. Компонент описывается именованной функцией в CamelCase: `function ComponentName(){}`.
 14. Компоненты на классах используются в исключительных случаях. 
-15. Используются [Хуки](https://ru.reactjs.org/docs/hooks-overview.html).
+15. Используются [Хуки](https://ru.reactjs.org/docs/hooks-overview.html){target=_blank}.
 16. Каждый компонент в отдельной директории, имя директории соответствует названию компонента в нижнем регистре через дефис. `ComponentName()` → `/component-name`
-17. Функция компонента оборачивается в [`React.memo()`](https://ru.reactjs.org/docs/react-api.html#reactmemo), чтобы повторно не исполнялась при тех же `props`. Если компоненты на классах, то используется PureComponent.
+17. Функция компонента оборачивается в [`React.memo()`](https://ru.reactjs.org/docs/react-api.html#reactmemo){target=_blank}, чтобы повторно не исполнялась при тех же `props`. Если компоненты на классах, то используется PureComponent.
 
 ## Типовая струткура компонента
 
