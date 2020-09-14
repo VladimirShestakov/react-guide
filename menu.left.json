@@ -92,6 +92,16 @@
               "title": "Сборка и запуск",
               "key": 522,
               "url": "/docs/develop/ssr/build.md"
+            },
+            {
+              "title": "Сервер",
+              "key": 523,
+              "url": "/docs/develop/ssr/server.md"
+            },
+            {
+              "title": "Логика рендера",
+              "key": 524,
+              "url": "/docs/develop/ssr/logic.md"
             }
           ]
         }
