@@ -79,7 +79,7 @@
           "url": "/docs/develop/structure.md"
         },
         {
-          "title": "Серверный рендер — SSR",
+          "title": "Рендер на сервере — SSR",
           "key": 52,
           "url": "/docs/develop/ssr/index.md",
           "children": [
