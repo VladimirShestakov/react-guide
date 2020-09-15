@@ -99,9 +99,9 @@
               "url": "/docs/develop/ssr/server.md"
             },
             {
-              "title": "Логика рендера",
+              "title": "Рендер",
               "key": 524,
-              "url": "/docs/develop/ssr/logic.md"
+              "url": "/docs/develop/ssr/render.md"
             }
           ]
         }
